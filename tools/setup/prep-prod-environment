@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eu
+
+python3 -m venv python-discord-insult-bot-venv
+if [ -d python-discord-insult-bot-venv/bin ]; then
+	source python-discord-insult-bot-venv/bin/activate
+fi
+cd "$(dirname "$0")"
+
+pip3 install -r ../../requirements.txt
