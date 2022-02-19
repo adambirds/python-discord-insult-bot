@@ -1,0 +1,12 @@
+[Unit]
+Description=Python Discord Insult Bot Service
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/project/python-discord-insult-bot/
+ExecStart=/project/python-discord-insult-bot/python-discord-insult-bot-venv/bin/python  /project/python-discord-insult-bot/bot.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
