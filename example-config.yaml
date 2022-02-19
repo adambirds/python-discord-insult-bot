@@ -1,5 +1,6 @@
 APP:
   ACCESS_TOKEN: "token"
+  CHANNEL_FOR_TASK: 11111111111111111 # channel id
   USER_TO_INSULT: "user-id-to-insult"
   INSULTS_LIST:
     [

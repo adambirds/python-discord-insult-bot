@@ -17,7 +17,7 @@ class TasksCog(commands.Cog):
                 json_data = await r.json(content_type="text/json")
             insult_list: List[str] = self.bot.conf_options["APP"]["INSULTS_LIST"]
             actual_insult: str = random.choice([random.choice(insult_list), json_data["insult"]])
-            channel = await self.bot.fetch_channel(944109932989530162)
+            channel = await self.bot.fetch_channel(self.bot.conf_options["APP"]["CHANNEL_FOR_TASK"])
             await channel.send(
                 f"Hey <@{self.bot.conf_options['APP']['USER_TO_INSULT']}>, {actual_insult}"
             )
