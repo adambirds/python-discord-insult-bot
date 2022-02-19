@@ -41,7 +41,7 @@ Then run:
 cp example-config.yaml config.yaml
 ```
 
-You will then need to edit config.yaml to your needs. You shouldn't delete any of the keys, however the `USER_TO_INSULT` and `INSULT_KEYS` can be left empty if you don't want to consistently insult a user every hour.
+You will then need to edit config.yaml to your needs. You shouldn't delete any of the keys, however the `USER_TO_INSULT`, `INSULT_KEYS` and `CHANNEL_FOR_TASK` can be left empty if you don't want to consistently insult a user every hour.
 
 The `ACCESS_TOKEN` key can be generated[here](https://discord.com/developers/applications).
 
@@ -80,7 +80,7 @@ The bot supports the following commands:
 | !insult | | `!insult @nameofuser` | Everyone | The bot will mention the user and then insult them. |
 
 ### Taks
-If you set the `USER_TO_INSULT` key to a user's ID, they will be insulted every hour. For this to work you need at least 1 custom insult in the `INSULT_LIST` key.
+If you set the `USER_TO_INSULT` key to a user's ID **AND** set the `CHANNEL_FOR_TASK` to a channel ID, they will be insulted every hour in that channel. For this to work you need at least 1 custom insult in the `INSULT_LIST` key.
 
 ## License
 
