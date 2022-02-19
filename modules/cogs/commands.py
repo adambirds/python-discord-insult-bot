@@ -10,7 +10,7 @@ class CommandsCog(commands.Cog):
         """>insult command"""
         async with self.bot.session.get("https://insult.mattbas.org/api/insult.json") as r:
             json_data = await r.json(content_type="text/json")
-        await ctx.send(f"Hey @{user}, {json_data['insult']}")
+        await ctx.send(f"Hey {user}, {json_data['insult']}")
 
 
 def setup(bot: commands.Bot) -> None:
