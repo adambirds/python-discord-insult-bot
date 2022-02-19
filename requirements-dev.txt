@@ -1,4 +1,5 @@
 pyyaml
+discord.py
 
 ## Zulint
 

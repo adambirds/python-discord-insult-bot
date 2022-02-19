@@ -1,0 +1,13 @@
+APP:
+  ACCESS_TOKEN: "token"
+  USER_TO_INSULT: "user-id-to-insult"
+  INSULTS_LIST:
+    [
+      "Have you received those divorce papers yet?",
+      "What's the difference between you and a Tijuana whore? Nothing. Absolutely nothing you horse cock sucker.",
+      "Tell your wife I said to return my fucking text already, I know she isn't busy with you so no excuses.",
+      "Just wanted to say, fuck you.",
+      "How many cocks can zombie fit in his mouth? That's it, simple question.",
+      "I cannot wait to see the day when your children rise up and beat the shit out of you with socks full of ice cubes.",
+      "What's up thunder fangs, chewer of dry ice and my nut sack?",
+    ]
